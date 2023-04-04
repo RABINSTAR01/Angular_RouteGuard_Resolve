@@ -3,16 +3,19 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { MarkComponent } from './mark/mark.component';
+import { ResovegGuard } from './resoveg.guard';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MarkComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [ResovegGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
